@@ -1,0 +1,12 @@
+[Unit]
+Description=Button Shim
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/status_check/button.py
+Restart=always
+RestartSec=10s
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
