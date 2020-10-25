@@ -13,7 +13,7 @@ wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/status
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/pi-stats.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/PiholeControl.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/all_pi_stats.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/restart_services.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/restart_services.sh
 
 
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/status-check-button.service
@@ -48,7 +48,7 @@ mv inky_update.py /usr/local/bin/status_check/
 mv status_lights.py /usr/local/bin/status_check/
 mv PiholeControl.py /usr/local/bin/status_check/
 mv all_pi_stats.py /usr/local/bin/status_check/
-mv restart_services.py /usr/local/bin/status_check/
+mv restart_services.sh /usr/local/bin/status_check/
 
 
 mv background.png /usr/local/bin/status_check/
