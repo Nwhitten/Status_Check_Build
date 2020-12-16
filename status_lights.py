@@ -100,17 +100,6 @@ while True:
             uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
         uh.show()
 
-        #Codex Resilio Sync
-        PixelNumber =6
-        PixelRow =0
-        uh.set_pixel(PixelNumber,PixelRow,Cr,Cg,Cb)
-        uh.show()
-        if website_up('http://192.168.11.190:14860/gui/'):
-            uh.set_pixel(PixelNumber,PixelRow, Gr,Gg,Gb)
-        else:
-            uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
-        uh.show()
-        
         
         
         
