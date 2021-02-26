@@ -29,13 +29,13 @@ button_was_held = False
 
 @buttonshim.on_press(buttonshim.BUTTON_A)
 def button_a(button, pressed):
-    buttonshim.set_pixel(0, 0, 255)
+    buttonshim.set_pixel(200, 200, 0)
     if pingOk('127.0.0.1'):
         sys.argv = [0,"127.0.0.1"]
         exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
-        exec(open("/usr/local/bin/status_check/inky_update.py").read())
+        #time.sleep(10)
+        #exec(open("/usr/local/bin/status_check/inky_update.py").read())
     else:
         buttonshim.set_pixel(200, 0, 0)
         time.sleep(2)
@@ -44,13 +44,13 @@ def button_a(button, pressed):
 
 @buttonshim.on_press(buttonshim.BUTTON_B)
 def button_b(button, pressed):
-    buttonshim.set_pixel(0, 0, 255)
+    buttonshim.set_pixel(200, 200, 0)
     if pingOk('192.168.11.160'):
         sys.argv = [0,"192.168.11.160"]
         exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
-        exec(open("/usr/local/bin/status_check/inky_update.py").read())
+        #time.sleep(10)
+        #exec(open("/usr/local/bin/status_check/inky_update.py").read())
     else:
         buttonshim.set_pixel(200, 0, 0)
         time.sleep(2)
@@ -59,32 +59,32 @@ def button_b(button, pressed):
 
 @buttonshim.on_press(buttonshim.BUTTON_C)
 def button_c(button, pressed):
-    buttonshim.set_pixel(0, 0, 255)
+    buttonshim.set_pixel(200, 200, 0)
     if pingOk('192.168.195.125'):
         sys.argv = [0,"192.168.11.125"]
         exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
-        exec(open("/usr/local/bin/status_check/inky_update.py").read())
+        #time.sleep(10)
+        #exec(open("/usr/local/bin/status_check/inky_update.py").read())
     else:
         buttonshim.set_pixel(200, 0, 0)
         time.sleep(2)
     buttonshim.set_pixel(0, 0, 0)
 
 
-@buttonshim.on_press(buttonshim.BUTTON_D)
-def button_d(button, pressed):
-    buttonshim.set_pixel(0, 0, 255)
-    if pingOk('192.168.195.112'):
-        sys.argv = [0,"192.168.195.112"]
-        exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
-        buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
-        exec(open("/usr/local/bin/status_check/inky_update.py").read())
-    else:
-        buttonshim.set_pixel(200, 0, 0)
-        time.sleep(2)
-    buttonshim.set_pixel(0, 0, 0)
+#@buttonshim.on_press(buttonshim.BUTTON_D)
+#def button_d(button, pressed):
+#    buttonshim.set_pixel(0, 0, 255)
+#    if pingOk('192.168.195.112'):
+#        sys.argv = [0,"192.168.195.112"]
+#        exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
+#        buttonshim.set_pixel(0, 200, 0)
+#        time.sleep(10)
+#        exec(open("/usr/local/bin/status_check/inky_update.py").read())
+#    else:
+#        buttonshim.set_pixel(200, 0, 0)
+#        time.sleep(2)
+#    buttonshim.set_pixel(0, 0, 0)
 
 
 # @buttonshim.on_press(buttonshim.BUTTON_E)
