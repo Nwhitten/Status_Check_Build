@@ -38,7 +38,7 @@ Ar,Ag,Ab = 130,60,0
 Rr,Rg,Rb = 255,0,0
 RrX,RgX,RbX = 130,0,0
 
-ExternalSource = True
+ExternalSource = False
 HoleStatus = "enabled"
 
 uh.clear()
