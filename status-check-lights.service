@@ -1,0 +1,12 @@
+[Unit]
+Description=Unicorn Hat
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/status_check/status_lights.py
+Restart=always
+RestartSec=10s
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
