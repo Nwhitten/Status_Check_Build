@@ -3,7 +3,7 @@
 
 ### Automatic
 
-`wget -O - https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/install.sh | sudo bash`
+`wget -O - https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/install.sh | sudo bash`
 
 
 ### Additional Requirements
