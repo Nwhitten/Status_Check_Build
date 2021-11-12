@@ -6,32 +6,32 @@ echo ""
 
 echo "Downloading files..."
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/update.sh
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/button.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky_update.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/DHM_Update.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/status_lights.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/pi-stats.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/PiholeControl.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/all_pi_stats.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/all_pi_stats_DHM.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/restart_services.sh
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/update.sh
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/button.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky_update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/DHM_Update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/status_lights.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/pi-stats.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/PiholeControl.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats_DHM.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/restart_services.sh
 
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/status-check-button.service
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/status-check-lights.service
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/status-check-button.service
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/status-check-lights.service
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/background.png
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/background_pihole.png
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/background_pihole_sm.png
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/background_stats.png
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/background.png
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/background_pihole.png
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/background_pihole_sm.png
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/background_stats.png
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/DHM_cog.jpg
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/DHM_pihole.jpg
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/DHM_rasp.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_cog.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_pihole.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_rasp.jpg
 
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/ArialUnicode.ttf
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/master/inky-hole_assets/ArialBold.ttf
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/ArialUnicode.ttf
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/ArialBold.ttf
 
 echo ""
 
