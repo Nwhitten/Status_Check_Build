@@ -58,7 +58,7 @@ except:
     ratio = '?'
 
 if  str(holestatus) == 'enabled':
-    img = Image.open("/usr/local/bin/status_check/DHM_pihole.jpg")
+    img = Image.open("/usr/local/bin/status_check/DHM_pihole_dark.jpg")
     draw = ImageDraw.Draw(img)
     status_output = 'Enabled'
     status_output_w, status_output_h = font_ArialB.getsize(status_output)
@@ -66,7 +66,7 @@ if  str(holestatus) == 'enabled':
     draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
   
 else:
-    img = Image.new("RGB",(width,height),(255,255,255))
+    img = Image.new("RGB",(width,height),(0,0,0))
     draw = ImageDraw.Draw(img)
     status_output = 'Disabled'
     status_output_w, status_output_h = font_ArialB.getsize(status_output)
@@ -77,18 +77,18 @@ else:
 now = datetime.now()
 current_time = now.strftime("%H:%M")
 
-draw.text((0,40), 'Total queries (' + str(unique_clients) + ' clients)      ' , (0,0,0), fontex_ArialB)
-draw.text((5,60), str(dns_queries) , (0,0,0), fontti_ArialB)
+draw.text((0,40), 'Total queries (' + str(unique_clients) + ' clients)      ' , (200,200,200), fontex_ArialB)
+draw.text((5,60), str(dns_queries) , (255,255,255), fontti_ArialB)
 
-draw.text((0,90), 'Queries Blocked' , (0,0,0), fontex_ArialB)
-draw.text((5,110), str(adsblocked) , (0,0,0), fontti_ArialB)
+draw.text((0,90), 'Queries Blocked' , (200,200,200), fontex_ArialB)
+draw.text((5,110), str(adsblocked) , (255,255,255), fontti_ArialB)
 
-draw.text((0,140), 'Percent Blocked' , (0,0,0), fontex_ArialB)
-draw.text((5,160), str("%.1f" % round(ratioblocked,2)) + "% ", (0,0,0), fontti_ArialB)
+draw.text((0,140), 'Percent Blocked' , (200,200,200), fontex_ArialB)
+draw.text((5,160), str("%.1f" % round(ratioblocked,2)) + "% ", (255,255,255), fontti_ArialB)
 
-draw.text((0,190), 'Domains on Blocklist' , (0,0,0), fontex_ArialB)
-draw.text((5,210), str(blocked_domains), (0,0,0), fontti_ArialB)
+draw.text((0,190), 'Domains on Blocklist' , (200,200,200), fontex_ArialB)
+draw.text((5,210), str(blocked_domains), (255,255,255), fontti_ArialB)
 
-draw.text((210,210),str(current_time), (255,0,0), fontti_ArialB)
+draw.text((250,210),str(current_time), (200,200,255), fontti_ArialB)
 disp.display(img)
 

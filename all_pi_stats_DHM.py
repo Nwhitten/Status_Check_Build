@@ -40,7 +40,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # Load graphic
 
-img = Image.open("/usr/local/bin/status_check/DHM_cog.jpg")
+img = Image.open("/usr/local/bin/status_check/DHM_rasp_dark.jpg")
 draw = ImageDraw.Draw(img)
 
 # get api data
@@ -86,24 +86,24 @@ current_time = now.strftime("%H:%M")
 
 
 draw.text((0,0), str(host_name),(255,0,0),fontsm_ArialB)
-draw.text((5,30), str(ip), (0,0,0), fontex_ArialB)
+draw.text((5,30), str(ip), (125,125,125), fontex_ArialB)
 
-draw.text((5,60), "UP:",(0,0,0),fontti_ArialB)
-draw.text((95,60), str(formatted_uptime),(0,0,0),fontti_ArialB)
+draw.text((5,60), "UP:",(200,200,200),fontti_ArialB)
+draw.text((95,60), str(formatted_uptime),(255,255,255),fontti_ArialB)
 
-draw.text((5,90), "TEMP:",(0,0,0), fontti_ArialB)
-draw.text((95,90), str(temp) + chr(176) + "c", (0,0,0), fontti_ArialB)
+draw.text((5,90), "TEMP:",(200,200,200), fontti_ArialB)
+draw.text((95,90), str(temp) + chr(176) + "c", (255,255,255), fontti_ArialB)
 
-draw.text((5,120), "CPU:",(0,0,0), fontti_ArialB)
-draw.text((95,120), str(load_percent) + "% ", (0,0,0), fontti_ArialB)
+draw.text((5,120), "CPU:",(200,200,200), fontti_ArialB)
+draw.text((95,120), str(load_percent) + "% ", (255,255,255), fontti_ArialB)
 
-draw.text((5,150), "MEM:",(0,0,0),fontti_ArialB)
-draw.text((95,150), str(memory_percent) + "% ", (0,0,0), fontti_ArialB)
+draw.text((5,150), "MEM:",(200,200,200),fontti_ArialB)
+draw.text((95,150), str(memory_percent) + "% ", (255,255,255), fontti_ArialB)
 
-draw.text((5,180), "DISK:", (0,0,0), fontti_ArialB)
-draw.text((95,180),  str(disk_usage) + " GB", (0,0,0), fontti_ArialB)
+draw.text((5,180), "DISK:", (200,200,200), fontti_ArialB)
+draw.text((95,180),  str(disk_usage) + " GB", (255,255,255), fontti_ArialB)
 
-draw.text((210,210),str(current_time), (255,0,0), fontsm_ArialB)
+draw.text((250,210),str(current_time), (200,200,255), fontti_ArialB)
 
 disp.display(img)
 
