@@ -7,7 +7,7 @@ import pihole as ph
 pihole = ph.PiHole("192.168.11.125")
 pihole.refresh()
 
-pihole.authenticate("poolloop")
+pihole.authenticate("wookie")
 pihole.disable(60)
 
 #pihole.refresh()

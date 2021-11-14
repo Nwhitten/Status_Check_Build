@@ -67,7 +67,7 @@ now = datetime.now()
 current_time = now.strftime("%H:%M")
 
 inky_display = InkyPHAT("black")
-#inky_display = InkyPHAT("black")
+#inky_display = InkyPHAT("red")
 
 inky_display.set_border(inky_display.WHITE)
 
@@ -75,7 +75,7 @@ inky_display.set_border(inky_display.WHITE)
 #    draw.text((5,0), 'Enabled', inky_display.BLACK, font)
 # else:
 
-draw.text((0,0), str(host_name),inky_display.RED,fontsm_ArialB)
+draw.text((0,0), str(host_name),inky_display.BLACK,fontsm_ArialB)
 draw.text((5,20), str(ip), inky_display.BLACK, fontex_ArialB)
 
 draw.text((5,38), str(formatted_uptime),inky_display.BLACK,fontti_ArialB)
@@ -85,7 +85,7 @@ draw.text((5,68), "C:" + str(load_percent) + "% ", inky_display.BLACK, fontti_Ar
 draw.text((75,68), "M:" + str(memory_percent) + "% ", inky_display.BLACK, fontti_ArialB)
 
 draw.text((5,83), "D:" + str(disk_usage) + " GB", inky_display.BLACK, fontti_ArialB)
-draw.text((155,83),str(current_time), inky_display.RED, fontsm_ArialB)
+draw.text((155,83),str(current_time), inky_display.BLACK, fontsm_ArialB)
 
 inky_display.set_image(img)
 

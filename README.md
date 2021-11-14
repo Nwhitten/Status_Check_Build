@@ -29,3 +29,11 @@ PiHole-api `sudo python3 -m pip install --no-cache-dir PiHole-api`
 zero tier `curl -s https://install.zerotier.com | sudo bash` (extra setup required)
 
 Net Talk `sudo nano /etc/netatalk/afp.conf` (extra setup required)
+
+`sudo apt update`
+
+`sudo raspi-config nonint do_spi 0`
+
+`sudo apt install python-rpi.gpio python-spidev python-pip python-pil python-numpy`
+
+`sudo pip3 install st7789`

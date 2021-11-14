@@ -9,12 +9,11 @@ echo "Downloading files..."
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/update.sh
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/button.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky_update.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/DHM_Update.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/DHM_update.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/status_lights.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/pi-stats.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/PiholeControl.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats.py
-wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats_DHM.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/restart_services.sh
 
 
@@ -51,11 +50,10 @@ echo "Moving files..."
 mv update.sh /usr/local/bin/status_check/
 mv button.py /usr/local/bin/status_check/
 mv inky_update.py /usr/local/bin/status_check/
-mv DHM_Update.py /usr/local/bin/status_check/
+mv DHM_update.py /usr/local/bin/status_check/
 mv status_lights.py /usr/local/bin/status_check/
 mv PiholeControl.py /usr/local/bin/status_check/
 mv all_pi_stats.py /usr/local/bin/status_check/
-mv all_pi_stats_DHM.py /usr/local/bin/status_check/
 mv restart_services.sh /usr/local/bin/status_check/
 
 
