@@ -103,7 +103,7 @@ draw.text((95,150), str(memory_percent) + "% ", (255,255,255), fontti_ArialB)
 draw.text((5,180), "DISK:", (200,200,200), fontti_ArialB)
 draw.text((95,180),  str(disk_usage) + " GB", (255,255,255), fontti_ArialB)
 
-draw.text((250,210),str(current_time), (200,200,255), fontti_ArialB)
+draw.text((245,210),str(current_time), (200,200,255), fontti_ArialB)
 
 disp.display(img)
 

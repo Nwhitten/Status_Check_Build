@@ -89,6 +89,6 @@ draw.text((5,160), str("%.1f" % round(ratioblocked,2)) + "% ", (255,255,255), fo
 draw.text((0,190), 'Domains on Blocklist' , (200,200,200), fontex_ArialB)
 draw.text((5,210), str(blocked_domains), (255,255,255), fontti_ArialB)
 
-draw.text((250,210),str(current_time), (200,200,255), fontti_ArialB)
+draw.text((245,210),str(current_time), (200,200,255), fontti_ArialB)
 disp.display(img)
 
