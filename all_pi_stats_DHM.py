@@ -1,3 +1,4 @@
+
 import os
 import json
 import urllib.request, urllib.error, urllib.parse
@@ -30,8 +31,8 @@ width = disp.width
 height = disp.height
 
 
-#ip_add = sys.argv[1]
-ip_add = '192.168.11.160'
+ip_add = sys.argv[1]
+#ip_add = '192.168.11.160'
 
 # Set current directory
 
@@ -74,26 +75,41 @@ fontsm_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",19)
 fontti_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",16)
 fontex_Arial = ImageFont.truetype("/usr/share/fonts/ArialUnicode.ttf",11)
 
-font_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",28)
-fontsm_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",19)
-fontti_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",16)
-fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",11)
+font_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",30)
+fontsm_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",27)
+fontti_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",25)
+fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",20)
 
 now = datetime.now()
 current_time = now.strftime("%H:%M")
 
 
 
-draw.text((0,0), str(host_name),(0,0,0)),fontsm_ArialB)
-draw.text((5,20), str(ip), (0,0,0), fontex_ArialB)
+draw.text((0,0), str(host_name),(255,0,0),fontsm_ArialB)
+draw.text((5,30), str(ip), (0,0,0), fontex_ArialB)
 
-draw.text((5,38), str(formatted_uptime),(0,0,0),fontti_ArialB)
-draw.text((5,53), str(temp) + chr(176) + "c", (0,0,0), fontti_ArialB)
+draw.text((5,60), "UP:",(0,0,0),fontti_ArialB)
+draw.text((95,60), str(formatted_uptime),(0,0,0),fontti_ArialB)
 
-draw.text((5,68), "C:" + str(load_percent) + "% ", (0,0,0), fontti_ArialB)
-draw.text((75,68), "M:" + str(memory_percent) + "% ", (0,0,0), fontti_ArialB)
+draw.text((5,90), "TEMP:",(0,0,0), fontti_ArialB)
+draw.text((95,90), str(temp) + chr(176) + "c", (0,0,0), fontti_ArialB)
 
-draw.text((5,83), "D:" + str(disk_usage) + " GB", (0,0,0), fontti_ArialB)
-draw.text((155,83),str(current_time), (0,0,0), fontsm_ArialB)
+draw.text((5,120), "CPU:",(0,0,0), fontti_ArialB)
+draw.text((95,120), str(load_percent) + "% ", (0,0,0), fontti_ArialB)
+
+draw.text((5,150), "MEM:",(0,0,0),fontti_ArialB)
+draw.text((95,150), str(memory_percent) + "% ", (0,0,0), fontti_ArialB)
+
+draw.text((5,180), "DISK:", (0,0,0), fontti_ArialB)
+draw.text((95,180),  str(disk_usage) + " GB", (0,0,0), fontti_ArialB)
+
+draw.text((210,210),str(current_time), (255,0,0), fontsm_ArialB)
 
 disp.display(img)
+
+
+
+
+
+
+
