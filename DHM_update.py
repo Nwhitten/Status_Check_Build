@@ -58,7 +58,7 @@ except:
     ratio = '?'
 
 if  str(holestatus) == 'enabled':
-    img = Image.open("/usr/local/bin/status_check_DHM/DHM_pihole.jpg")
+    img = Image.open("/usr/local/bin/status_check/DHM_pihole.jpg")
     draw = ImageDraw.Draw(img)
     status_output = 'Enabled'
     status_output_w, status_output_h = font_ArialB.getsize(status_output)
@@ -75,7 +75,7 @@ else:
     draw.text((status_output_x,0), status_output, (254,254,254), font_ArialB)
 
 now = datetime.now()
-current_time = now.strftime("%H:%M:%S")
+current_time = now.strftime("%H:%M")
 
 draw.text((0,40), 'Total queries (' + str(unique_clients) + ' clients)      ' , (0,0,0), fontex_ArialB)
 draw.text((5,60), str(dns_queries) , (0,0,0), fontti_ArialB)

@@ -63,7 +63,7 @@ while True:
             if not pihole.status == HoleStatus:
                 HoleStatus = pihole.status
                 exec(open("/usr/local/bin/status_check/DHM_update.py").read())
-                exec(open("/usr/local/bin/status_check/inky_update.py").read())
+                #exec(open("/usr/local/bin/status_check/inky_update.py").read())
         else:
             uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
             uh.show()
