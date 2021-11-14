@@ -84,7 +84,7 @@ while True:
         PixelRow =0
         uh.set_pixel(PixelNumber,PixelRow,Cr,Cg,Cb)
         uh.show()
-        if website_up('http://192.168.11.190:8080/cgi-bin/'):
+        if website_up('http://192.168.11.190:3755/cgi-bin/'):
             uh.set_pixel(PixelNumber,PixelRow, Gr,Gg,Gb)
         else:
             uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
@@ -108,21 +108,21 @@ while True:
         if ExternalSource == True:
             
              #PiHole
-            PixelNumber =0
-            PixelRow =2
-            uh.set_pixel(PixelNumber,PixelRow,Cr,Cg,Cb)
-            uh.show()
-            if website_up('http://192.168.195.112/admin/'):
-                pihole = ph.PiHole("192.168.195.112")
-                pihole.refresh()
-                if pihole.status == "enabled":
-                    uh.set_pixel(PixelNumber,PixelRow, Gr,Gg,Gb)
-                else:
-                    uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
-                uh.show()
-            else:
-                uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
-                uh.show()
+            #PixelNumber =0
+            #PixelRow =2
+            #uh.set_pixel(PixelNumber,PixelRow,Cr,Cg,Cb)
+            #uh.show()
+            #if website_up('http://192.168.195.112/admin/'):
+                #pihole = ph.PiHole("192.168.195.112")
+                #pihole.refresh()
+                #if pihole.status == "enabled":
+                    #uh.set_pixel(PixelNumber,PixelRow, Gr,Gg,Gb)
+                #else:
+                    #uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
+                #uh.show()
+            #else:
+                #uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
+                #uh.show()
             
             
             
