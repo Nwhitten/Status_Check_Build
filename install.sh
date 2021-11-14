@@ -14,6 +14,7 @@ wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/status_l
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/pi-stats.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/PiholeControl.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats.py
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/all_pi_stats_DHM.py
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/restart_services.sh
 
 
@@ -54,6 +55,7 @@ mv DHM_update.py /usr/local/bin/status_check/
 mv status_lights.py /usr/local/bin/status_check/
 mv PiholeControl.py /usr/local/bin/status_check/
 mv all_pi_stats.py /usr/local/bin/status_check/
+mv all_pi_stats_DHM.py /usr/local/bin/status_check/
 mv restart_services.sh /usr/local/bin/status_check/
 
 
