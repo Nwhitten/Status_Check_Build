@@ -29,6 +29,8 @@ wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hol
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_cog.jpg
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_pihole.jpg
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_rasp.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_pihole_dark.jpg
+wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/DHM_rasp_dark.jpg
 
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/ArialUnicode.ttf
 wget https://raw.githubusercontent.com/nwhitten/Status_Check_Build/main/inky-hole_assets/ArialBold.ttf
@@ -67,6 +69,8 @@ mv background_stats.png /usr/local/bin/status_check/
 mv DHM_cog.jpg /usr/local/bin/status_check/
 mv DHM_pihole.jpg /usr/local/bin/status_check/
 mv DHM_rasp.jpg /usr/local/bin/status_check/
+mv DHM_pihole_dark.jpg /usr/local/bin/status_check/
+mv DHM_rasp_dark.jpg /usr/local/bin/status_check/
 
 mv ArialUnicode.ttf /usr/share/fonts/
 mv ArialBold.ttf /usr/share/fonts/
