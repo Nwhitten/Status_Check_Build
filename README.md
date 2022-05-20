@@ -10,10 +10,12 @@
 need to run:
 
 `(crontab -l; echo "*/10 * * * * python3 /usr/local/bin/status_check/inky_update.py";) | crontab -`
+
 to install cron job to refresh pihole stats on inky-phat every 10 mins
 
 
 `(crontab -l; echo "*/1 * * * * python3 /usr/local/bin/status_check/DHM_update.py";) | crontab -`
+
 to install cron job to refresh pihole stats on Display HAT Mini every 1 min
 
 
@@ -42,16 +44,16 @@ Display HAT Mini library
 
 Unicorn Phat library 
 
-    `curl -sS https://get.pimoroni.com/unicornhat | bash`
+  `curl -sS https://get.pimoroni.com/unicornhat | bash`
 
 button shim library
 
-    `curl https://get.pimoroni.com/buttonshim | bash`
+  `curl https://get.pimoroni.com/buttonshim | bash`
 
 PiHole-api
 
-    `sudo python3 -m pip install --no-cache-dir PiHole-api`
+  `sudo python3 -m pip install --no-cache-dir PiHole-api`
 
 zero tier
 
-    `curl -s https://install.zerotier.com | sudo bash` (extra setup required)
+  `curl -s https://install.zerotier.com | sudo bash` (extra setup required)
