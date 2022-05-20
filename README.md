@@ -26,7 +26,9 @@ Pi Monitor2
       `curl https://get.pimoroni.com/inky | bash`
 
 OR
+
     Display HAT Mini library
+    
       `sudo apt update`
 
       `sudo raspi-config nonint do_spi 0`
