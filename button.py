@@ -79,7 +79,7 @@ def button_d(button, pressed):
     buttonshim.set_pixel(0, 0, 255)
     if pingOk('192.168.195.112'):
         sys.argv = [0,"192.168.195.112"]
-        exec(open("/usr/local/bin/status_check/all_pi_stats.py").read())
+        exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
         buttonshim.set_pixel(0, 200, 0)
         time.sleep(10)
         exec(open("/usr/local/bin/status_check/DHM_update.py").read())
