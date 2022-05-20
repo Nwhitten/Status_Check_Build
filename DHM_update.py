@@ -63,7 +63,7 @@ if  str(holestatus) == 'enabled':
     status_output = 'Enabled'
     status_output_w, status_output_h = font_ArialB.getsize(status_output)
     status_output_x = int((width - status_output_w) / 2)
-    draw.text((status_output_x,0), status_output, (0,0,0), font_ArialB)
+    draw.text((status_output_x,0), status_output, (0,200,0), font_ArialB)
   
 else:
     img = Image.new("RGB",(width,height),(0,0,0))
