@@ -20,9 +20,11 @@ to install cron job to refresh pihole stats on Display HAT Mini every 1 min
 you will also need to install the following:
 
 Pi Monitor2
+
   `wget -O - https://raw.githubusercontent.com/nwhitten/pi_monitor/master/install2.sh | sudo bash`
 
-Inky Phat library 
+Inky Phat library
+
   `curl https://get.pimoroni.com/inky | bash`
 
 OR
