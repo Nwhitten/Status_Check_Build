@@ -6,7 +6,7 @@ import socket
 import sys
 import ST7789
 from PIL import Image, ImageFont, ImageDraw
-from font_fredoka_one import FredokaOne
+#from font_fredoka_one import FredokaOne
 from datetime import datetime
 
 # Create ST7789 LCD display class.
