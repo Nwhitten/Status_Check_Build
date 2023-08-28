@@ -34,7 +34,7 @@ def button_a(button, pressed):
         sys.argv = [0,"127.0.0.1"]
         exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
+        time.sleep(20)
         exec(open("/usr/local/bin/status_check/DHM_update.py").read())
     else:
         buttonshim.set_pixel(200, 0, 0)
@@ -49,7 +49,7 @@ def button_b(button, pressed):
         sys.argv = [0,"192.168.11.160"]
         exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
+        time.sleep(20)
         exec(open("/usr/local/bin/status_check/DHM_update.py").read())
         #exec(open("/usr/local/bin/status_check/inky_update.py").read())
     else:
@@ -65,7 +65,7 @@ def button_c(button, pressed):
         sys.argv = [0,"192.168.11.125"]
         exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
         buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
+        time.sleep(20)
         exec(open("/usr/local/bin/status_check/DHM_update.py").read())
         #exec(open("/usr/local/bin/status_check/inky_update.py").read())
     else:
@@ -77,16 +77,16 @@ def button_c(button, pressed):
 @buttonshim.on_press(buttonshim.BUTTON_D)
 def button_d(button, pressed):
     buttonshim.set_pixel(0, 0, 255)
-    if pingOk('192.168.195.112'):
-        sys.argv = [0,"192.168.195.112"]
-        exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
-        buttonshim.set_pixel(0, 200, 0)
-        time.sleep(10)
-        exec(open("/usr/local/bin/status_check/DHM_update.py").read())
+    #if pingOk('192.168.195.112'):
+    #    sys.argv = [0,"192.168.195.112"]
+    #    exec(open("/usr/local/bin/status_check/all_pi_stats_DHM.py").read())
+    #    buttonshim.set_pixel(0, 200, 0)
+    #    time.sleep(20)
+    #    exec(open("/usr/local/bin/status_check/DHM_update.py").read())
         #exec(open("/usr/local/bin/status_check/inky_update.py").read())
-    else:
-        buttonshim.set_pixel(200, 0, 0)
-        time.sleep(2)
+    #else:
+    #    buttonshim.set_pixel(200, 0, 0)
+    #    time.sleep(2)
     buttonshim.set_pixel(0, 0, 0)
 
 

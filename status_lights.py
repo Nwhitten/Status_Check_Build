@@ -2,13 +2,17 @@
 
 import time
 import unicornhat as uh
+
+import json
+import urllib.request, urllib.error, urllib.parse#!/usr/bin/env python3
+
 import requests
 import signal
 import buttonshim
 import subprocess
 
 # Import the library
-import pihole as ph
+#import pihole as ph
 
 #from blinkt import set_pixel, set_brightness, show, clear
 uh.set_layout(uh.PHAT)
@@ -40,6 +44,7 @@ RrX,RgX,RbX = 130,0,0
 
 ExternalSource = True
 HoleStatus = "enabled"
+ParsedHoleStatus= "enabled"
 
 uh.clear()
 
@@ -53,15 +58,19 @@ while True:
         uh.set_pixel(PixelNumber,PixelRow,Cr,Cg,Cb)
         uh.show()
         if website_up('http://192.168.11.125/admin/'):
-            pihole = ph.PiHole("192.168.11.125")
-            pihole.refresh()
-            if pihole.status == "enabled":
+            f = urllib.request.urlopen('http://192.168.11.125/admin/api.php?summaryRaw&auth=bf24d2aa74054bb73b640c7bcbb111255e1a573fb308f9e0deaade9017e4f0b2')
+            json_string = f.read()
+            parsed_json = json.loads(json_string)
+            HoleStatusParsed = parsed_json['status']
+            f.close()
+
+            if str(HoleStatusParsed) == "enabled":
                 uh.set_pixel(PixelNumber,PixelRow, Gr,Gg,Gb)
             else:
                 uh.set_pixel(PixelNumber,PixelRow, Rr,Rg,Rb)
             uh.show()
-            if not pihole.status == HoleStatus:
-                HoleStatus = pihole.status
+            if not str(HoleStatusParsed) == HoleStatus:
+                HoleStatus = str(HoleStatusParsed)
                 exec(open("/usr/local/bin/status_check/DHM_update.py").read())
                 #exec(open("/usr/local/bin/status_check/inky_update.py").read())
         else:

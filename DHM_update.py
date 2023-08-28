@@ -39,7 +39,8 @@ fontex_ArialB = ImageFont.truetype("/usr/share/fonts/ArialBold.ttf",20)
 
 
 try:
-    f = urllib.request.urlopen('http://pihole.local/admin/api.php')
+    #f = urllib.request.urlopen('http://pihole.local/admin/api.php')
+    f = urllib.request.urlopen('http://192.168.11.125/admin/api.php?summaryRaw&auth=bf24d2aa74054bb73b640c7bcbb111255e1a573fb308f9e0deaade9017e4f0b2')
     json_string = f.read()
     parsed_json = json.loads(json_string)
     adsblocked = parsed_json['ads_blocked_today']
